@@ -1,0 +1,57 @@
+print("Hello, welcome to Calculator Version 1.0!")
+print("This calculator can perform single operations between two numbers")
+print("")
+
+firstNumber = raw_input("What is your first number?: ")
+
+if len(firstNumber) > 0 and (not(firstNumber.isalpha())):
+    print("Ok, " + firstNumber)
+	
+else:
+	 print("Not a number")
+	 firstNumber = raw_input("What is your first number?: ")
+
+print("")
+secondNumber = raw_input("What is your second number?: ")
+
+if len(secondNumber) > 0 and (not(secondNumber.isalpha())):
+    print ("Ok, and " + secondNumber)
+
+else: 
+     print ("Not a number")
+     secondNumber = raw_input("What is your second number?: ")
+
+
+print("")	
+third_step = ("What operation?")
+
+print(third_step)
+print("")
+print("* / + - ")
+print("")
+input = raw_input("")
+
+if input == "*":
+    print(float(firstNumber)*float(secondNumber))
+	
+elif input == "/":
+	print(float(firstNumber)/float(secondNumber))
+	
+
+elif input == "-":
+    print(float(firstNumber)-float(secondNumber))
+	
+elif input == "+":
+    print(float(firstNumber)+float(secondNumber))
+
+else:
+     print("Not an operation")
+
+print("")
+print("Thankyou for using Calculator 1.0!")	
+print("")
+print("Again?")
+print("")
+print("Y or N")  
+input2 = raw_input("")
+
